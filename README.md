@@ -16,13 +16,13 @@ Classificações:
 - Terra úmida 
 
 Componentes:
-1- Arduino Uno R3
-1- LCD 16 x 2
-1- 250 kΩ Potenciômetro
-1- 220 Ω Resistor
-1- Sensor de umidade do solo
-3- 220 kΩ Resistor
-1- Lâmpada
-1- Relé SPDT
-3- LEDs
+- 1- Arduino Uno R3
+- 1- LCD 16 x 2
+- 1- 250 kΩ Potenciômetro
+- 1- 220 Ω Resistor
+- 1- Sensor de umidade do solo
+- 3- 220 kΩ Resistor
+- 1- Lâmpada
+- 1- Relé SPDT
+- 3- LEDs
 
