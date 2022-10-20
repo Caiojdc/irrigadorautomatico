@@ -11,6 +11,18 @@ Para o monitoramento são utilizados 3 LEDs( Vermelho, Verde, Amarelo), e uma te
 Para a representação da Bomba D'água é utilizada uma lâmpada, alimentada por um simulador de função, que representaria a fonte de energia externa, e um relé que conectado ao arduíno que realiza o ativamento do mesmo. O ciclo se repete a cada 5 segundos.
 
 Classificações:
-> Terra Seca 
-> Terra Meio Seca 
-> Terra úmida 
+- Terra Seca 
+- Terra Meio Seca 
+- Terra úmida 
+
+Componentes:
+1- Arduino Uno R3
+1- LCD 16 x 2
+1- 250 kΩ Potenciômetro
+1- 220 Ω Resistor
+1- Sensor de umidade do solo
+3- 220 kΩ Resistor
+1- Lâmpada
+1- Relé SPDT
+3- LEDs
+
