@@ -3,6 +3,8 @@
 
 Este é um projeto para a disciplina de programção de software básico em C
 
+https://www.tinkercad.com/things/ctvJA8Cw95s?sharecode=eG7AuuJwV4WcbeUjkGPMYPQbbPLxOjCKeeFRCJzJ1zY
+
 Um dos requisitos era utilizar o arduino na construção do projeto. Para isso foi utilizado o TinkerCAD, plataforma que simula os circuitos e nos dá a possibilidade de rodar o projeto sem a necessidade de termos as peças em mãos.
 
 O meu projeto foi baseado na idéia de um irrigador automático, utilizando um sensor de umidade para verificar a situação do solo. Após a verificação do nível de água no solo, o irrigador identifica a situação baseado nos parâmetros configurados, se o solo necessitar a rega é realizada.
