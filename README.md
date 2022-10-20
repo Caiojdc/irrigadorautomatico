@@ -1,4 +1,5 @@
 # Irrigador Automático 
+![TRABALHO PROG C (1)](https://user-images.githubusercontent.com/95105667/197071473-5a2e53eb-e7bb-4811-a0fe-715cfc038fa2.png)
 
 Este é um projeto para a disciplina de programção de software básico em C
 
