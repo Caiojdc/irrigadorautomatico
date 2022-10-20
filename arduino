@@ -1,0 +1,65 @@
+#include <LiquidCrystal.h>
+
+LiquidCrystal lcd (2,3,4,5,6,7);
+int ledVerde = 13;
+int ledAmarelo = 12;
+int ledVermelho = 11;  // Declarando as variáveis
+int pinoBomba = 8;
+int humidade = 0;
+  
+void setup()
+{
+  
+  lcd.begin(16, 2);
+  pinMode(ledVerde, OUTPUT);
+  pinMode(ledAmarelo, OUTPUT);
+  pinMode(ledVermelho, OUTPUT); // Declarando a função de cada porta 
+  pinMode(pinoBomba,OUTPUT);
+  Serial.begin(9600);
+  pinMode(A0, OUTPUT);
+  pinMode(A1, INPUT);
+  
+}
+
+void loop()
+{
+  digitalWrite(A0, HIGH);
+  delay(1000); 
+  humidade = analogRead(A1); // Ativa o sensor de humidade
+  digitalWrite(A0, LOW);
+  Serial.println(humidade);
+  
+  digitalWrite(11, LOW);
+  digitalWrite(12, LOW);    // Desativa os leds e o relé
+  digitalWrite(13, LOW);
+  digitalWrite(8, LOW);
+  
+  if (humidade < 200){
+    digitalWrite(11, HIGH);
+    lcd.clear();
+    lcd.print("  TERRA  SECA ");  // Em caso de seca
+    lcd.setCursor(2,1);
+    lcd.print("  REGANDO... ");
+    digitalWrite(8, HIGH);
+    delay(5000);
+    } 
+  
+  	else {
+    	if (humidade < 600) {
+      		digitalWrite(12, HIGH);
+      		lcd.clear();
+      		lcd.print(" TERRA MEIO SECA ");  // Indica que o solo está mediano
+      		lcd.setCursor(0,1);
+      		lcd.print("PRONTO P/ REGAR! ");
+    } 
+      	else {
+      		digitalWrite(13, HIGH);
+      		lcd.clear();
+      		lcd.print("  TERRA  UMIDA ");  // Em caso de terra úmida
+      		lcd.setCursor(0,1);
+    		lcd.print("PLANTAS FELIZES :) ");
+    }
+    
+  delay(2000); // Espera 2 segundos e repete
+    }
+}
